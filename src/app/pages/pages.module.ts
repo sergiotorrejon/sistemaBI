@@ -1,3 +1,4 @@
+import { MatCardModule } from '@angular/material/card';
 import { ReportesrrhhComponent } from './recursoshumanos/reportesrrhh/reportesrrhh.component';
 import { FormulariosComponent } from './recursoshumanos/formularios/formularios.component';
 import { EmpleadosComponent } from './recursoshumanos/empleados/empleados.component';
@@ -30,7 +31,8 @@ import { MaterialModule } from '../material-module';
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    CdkTableModule
+    CdkTableModule,
+    MatCardModule
   ],
   providers: [],
   entryComponents: [],
