@@ -15,3 +15,34 @@
 .example-container .mat-form-field + .mat-form-field {
   margin-left: 8px;
 }
+
+.example-form {
+
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+td {
+  padding-right:8px;
+}
+
+.example-small-box, .example-large-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.example-small-box {
+  height: 150px;
+  width: 150px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}

@@ -23,6 +23,7 @@ import { Router } from '@angular/router';
 export class AppSidebarComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
   isExpanded = false;
+  panelOpenState = false;
 
   private _mobileQueryListener: () => void;
 

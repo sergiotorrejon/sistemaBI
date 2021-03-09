@@ -11,14 +11,19 @@ export interface Menu {
 const MENUITEMS: any = [
   { state: 'dashboard', name: 'Dashboard', type: 'link', icon: 'insert_chart_outlined' },
   { state: 'dashboard', name: 'Cuadro de Mando', type: 'link', icon: 'show_chart' },
-  { name: 'INICIO', icon: 'other_houses',
+  { name: 'CONFIGURACION', icon: 'settings',
       submenu: [
       { state: 'configuracion', type: 'link', name: 'Configuracion', icon: 'settings'},
-      { state: 'parametros', type: 'link', name: 'Parametros', icon: 'build_circle'},
-      { state: 'usuarios', type: 'link', name: 'Usuarios', icon: 'manage_accounts'}
+      { state: 'parametros', type: 'link', name: 'Parametros', icon: 'build_circle'}
       ]
   },
-  { name: 'RECURSOS HUMANOS', icon: 'groups',
+  { name: 'INICIO', icon: 'other_houses',
+  submenu: [
+  { state: 'usuarios', type: 'link', name: 'General', icon: 'manage_accounts'},
+  { state: 'usuarios', type: 'link', name: 'Usuarios', icon: 'manage_accounts'}
+  ]
+},
+  { name: 'RRHH', icon: 'groups',
       submenu: [
         { state: 'empleados', type: 'link', name: 'Empleados', icon: 'people_outline' },
         { state: 'formularios', type: 'link', name: 'Formularios', icon: 'feed' },

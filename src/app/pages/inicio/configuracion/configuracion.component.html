@@ -1,76 +1,228 @@
 <!-- ============================================================== -->
 <!-- Simple four boxes Row -->
 <!-- ============================================================== -->
+
+
 <div fxLayout="row wrap">
     <!-- column -->
-    <div fxFlex.gt-lg="66" fxFlex.gt-md="66" fxFlex.gt-xs="100" fxFlex="100">
+    <div fxFlex.gt-lg="70" fxFlex.gt-md="70" fxFlex.gt-xs="100" fxFlex="100">
         <mat-card>
             <mat-card-header>
-                <div mat-card-avatar><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></div>
-                <mat-card-title>Configuracion Inicial</mat-card-title>
-                <mat-card-subtitle>Datos Iniciales</mat-card-subtitle>
+                <mat-card-title>NOMBRE O RAZON SOCIAL</mat-card-title>
+                <mat-card-subtitle>Nombre o Razon Social de la Empresa/Institucion</mat-card-subtitle>
             </mat-card-header>
             <mat-divider></mat-divider>
             <mat-card-content>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio odit magni quaerat ut quas quae voluptatibus laudantium esse doloribus, consequuntur, rem est molestiae totam labore ad minima tempore illum inventore officia hic nam quo necessitatibus? Ipsam ratione non ea. Nostrum debitis placeat hic repudiandae eveniet sapiente soluta. Molestiae ducimus iusto aperiam suscipit maiores officia quibusdam laudantium expedita, distinctio quae aliquid facere a vitae magni impedit ullam unde temporibus repellendus sunt assumenda omnis, aut molestias commodi. Fugit explicabo unde, dolorum quo debitis earum culpa soluta nulla quae sit qui. Obcaecati saepe, adipisci quas, quis perspiciatis molestias quidem, quo quasi architecto illum maiores. Error odit temporibus autem nisi neque magni a quisquam sit ex aut iusto facilis, deleniti sunt nemo eaque natus laudantium repellat officiis possimus. Ducimus, voluptatibus. Molestias ipsa facere aliquam in repellat illum voluptas maxime vero tenetur vel, doloremque alias distinctio maiores enim deserunt possimus quidem tempora ut? Recusandae eum accusantium, ipsam ex quos quidem voluptatum, nemo delectus eaque dolores quisquam, enim deleniti quae modi nobis eveniet temporibus cum cumque ab perspiciatis voluptas harum deserunt esse. Debitis nesciunt beatae accusantium quibusdam, qui, incidunt, suscipit libero laudantium quod expedita saepe fugiat quae quia similique rerum nam quos deserunt autem itaque!
+                <p>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Nombre o Razon Social de la Empresa</mat-label>
+                        <span matPrefix><mat-icon>home</mat-icon>  </span>
+                        <input matInput>
+                        <button matSuffix mat-icon-button>
+                            <mat-icon>mode_edit</mat-icon>
+                        </button>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Breve Descripcion</mat-label>
+                      <textarea matInput></textarea>
+                    </mat-form-field>
+                 </p>
             </mat-card-content>
-            <mat-card-actions>
-                <button mat-button>Basic</button>
-                <button mat-button color="primary">Primary</button>
-                <button mat-button color="accent">Accent</button>
-                <button mat-button color="warn">Warn</button>
-                <button mat-button disabled>Disabled</button>
-                <a mat-button href="https://www.google.com/" target="_blank">Link</a>
-              </mat-card-actions>
         </mat-card>
-        <app-parametros></app-parametros>
+
     </div>
     <!-- column -->
     <!-- column -->
-    <div fxFlex.gt-lg="33" fxFlex.gt-md="33" fxFlex.gt-xs="100" fxFlex="100">
-
+    <div fxFlex.gt-lg="30" fxFlex.gt-md="30" fxFlex.gt-xs="100" fxFlex="100">
         <mat-card>
-            <mat-card-title>
-                Configuracion
-            </mat-card-title>
-            <mat-card-content>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio odit magni quaerat ut quas quae voluptatibus laudantium esse doloribus, consequuntur, rem est molestiae totam labore ad minima tempore illum inventore officia hic nam quo necessitatibus? Ipsam ratione non ea. Nostrum debitis placeat hic repudiandae eveniet sapiente soluta. Molestiae ducimus iusto aperiam suscipit maiores officia quibusdam laudantium expedita, distinctio quae aliquid facere a vitae magni impedit ullam unde temporibus repellendus sunt assumenda omnis, aut molestias commodi. Fugit explicabo unde, dolorum quo debitis earum culpa soluta nulla quae sit qui. Obcaecati saepe, adipisci quas, quis perspiciatis molestias quidem, quo quasi architecto illum maiores. Error odit temporibus autem nisi neque magni a quisquam sit ex aut iusto facilis, deleniti sunt nemo eaque natus laudantium repellat officiis possimus. Ducimus, voluptatibus. Molestias ipsa facere aliquam in repellat illum voluptas maxime vero tenetur vel, doloremque alias distinctio maiores enim deserunt possimus quidem tempora ut? Recusandae eum accusantium, ipsam ex quos quidem voluptatum, nemo delectus eaque dolores quisquam, enim deleniti quae modi nobis eveniet temporibus cum cumque ab perspiciatis voluptas harum deserunt esse. Debitis nesciunt beatae accusantium quibusdam, qui, incidunt, suscipit libero laudantium quod expedita saepe fugiat quae quia similique rerum nam quos deserunt autem itaque!
+            <mat-card-header>
+                <mat-card-title>LOGO</mat-card-title>
+                <mat-card-subtitle>Logo o Imagen</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content align="center">
+                <div align="center" class="example-small-box mat-elevation-z4">
+                    LOGO
+                </div> 
             </mat-card-content>
         </mat-card>
     </div>
     <!-- column -->
 </div>
 
-<!-- ============================================================== -->
-<!-- Image Card row-->
-<!-- ============================================================== -->
 <div fxLayout="row wrap">
-    <!-- Card column -->
-    <div fxFlex.gt-lg="25" fxFlex.gt-md="40" fxFlex.gt-xs="100" fxFlex="100">
+    <!-- column -->
+    <div fxFlex.gt-lg="50" fxFlex.gt-md="50" fxFlex.gt-xs="100" fxFlex="100">
 
         <mat-card>
-            <mat-card-title>
-                Configuracion
-            </mat-card-title>
+            <mat-card-header>
+                <mat-card-title>DATOS/INFORMACION</mat-card-title>
+                <mat-card-subtitle>Datos o Informacion de la Empresa/Institucion</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
             <mat-card-content>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio odit magni quaerat ut quas quae voluptatibus laudantium esse doloribus, consequuntur, rem est molestiae totam labore ad minima tempore illum inventore officia hic nam quo necessitatibus? Ipsam ratione non ea. Nostrum debitis placeat hic repudiandae eveniet sapiente soluta. Molestiae ducimus iusto aperiam suscipit maiores officia quibusdam laudantium expedita, distinctio quae aliquid facere a vitae magni impedit ullam unde temporibus repellendus sunt assumenda omnis, aut molestias commodi. Fugit explicabo unde, dolorum quo debitis earum culpa soluta nulla quae sit qui. Obcaecati saepe, adipisci quas, quis perspiciatis molestias quidem, quo quasi architecto illum maiores. Error odit temporibus autem nisi neque magni a quisquam sit ex aut iusto facilis, deleniti sunt nemo eaque natus laudantium repellat officiis possimus. Ducimus, voluptatibus. Molestias ipsa facere aliquam in repellat illum voluptas maxime vero tenetur vel, doloremque alias distinctio maiores enim deserunt possimus quidem tempora ut? Recusandae eum accusantium, ipsam ex quos quidem voluptatum, nemo delectus eaque dolores quisquam, enim deleniti quae modi nobis eveniet temporibus cum cumque ab perspiciatis voluptas harum deserunt esse. Debitis nesciunt beatae accusantium quibusdam, qui, incidunt, suscipit libero laudantium quod expedita saepe fugiat quae quia similique rerum nam quos deserunt autem itaque!
+                <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>RUBRO</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  
+                    <table class="example-full-width" cellspacing="0">
+                        <tr>
+                            <td><mat-form-field class="example-full-width">
+                                <mat-label>TELEFONO 1</mat-label>
+                                <input matInput>
+                            </mat-form-field></td>
+                            <td><mat-form-field class="example-full-width">
+                                <mat-label>TELEFONO 2</mat-label>
+                                <input matInput>
+                            </mat-form-field></td>
+                        </tr>
+                    </table>
+                  
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Pagina Web</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                      <mat-label>email</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                 
+                    <table class="example-full-width" cellspacing="0"><tr>
+                      <td><mat-form-field class="example-full-width">
+                        <mat-label>Pais</mat-label>
+                        <input matInput placeholder="Ex. San Francisco">
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                        <mat-label>Ciudad</mat-label>
+                        <input matInput placeholder="Ex. California">
+                      </mat-form-field></td>
+                    </tr></table>
+                    <table class="example-full-width" cellspacing="0"><tr>
+                        <td><mat-form-field class="example-full-width">
+                          <mat-label>Ciudad</mat-label>
+                          <input matInput placeholder="Ex. California">
+                        </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                          <mat-label>Municipio</mat-label>
+                          <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
+                          <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                        </mat-form-field></td>
+                      </tr></table>
+                  </form>
             </mat-card-content>
         </mat-card>
-        <app-empleados></app-empleados>
 
     </div>
-    <!-- Card column -->
-    <!-- Card column -->
-    <div fxFlex.gt-lg="75" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100">
-
+    <!-- column -->
+    <!-- column -->
+    <div fxFlex.gt-lg="50" fxFlex.gt-md="50" fxFlex.gt-xs="100" fxFlex="100">
         <mat-card>
-            <mat-card-title>
-                Configuracion
-            </mat-card-title>
+            <mat-card-header>
+                <mat-card-title>DATOS/INFORMACION</mat-card-title>
+                <mat-card-subtitle>Datos o Informacion de la Empresa/Institucion</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
             <mat-card-content>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio odit magni quaerat ut quas quae voluptatibus laudantium esse doloribus, consequuntur, rem est molestiae totam labore ad minima tempore illum inventore officia hic nam quo necessitatibus? Ipsam ratione non ea. Nostrum debitis placeat hic repudiandae eveniet sapiente soluta. Molestiae ducimus iusto aperiam suscipit maiores officia quibusdam laudantium expedita, distinctio quae aliquid facere a vitae magni impedit ullam unde temporibus repellendus sunt assumenda omnis, aut molestias commodi. Fugit explicabo unde, dolorum quo debitis earum culpa soluta nulla quae sit qui. Obcaecati saepe, adipisci quas, quis perspiciatis molestias quidem, quo quasi architecto illum maiores. Error odit temporibus autem nisi neque magni a quisquam sit ex aut iusto facilis, deleniti sunt nemo eaque natus laudantium repellat officiis possimus. Ducimus, voluptatibus. Molestias ipsa facere aliquam in repellat illum voluptas maxime vero tenetur vel, doloremque alias distinctio maiores enim deserunt possimus quidem tempora ut? Recusandae eum accusantium, ipsam ex quos quidem voluptatum, nemo delectus eaque dolores quisquam, enim deleniti quae modi nobis eveniet temporibus cum cumque ab perspiciatis voluptas harum deserunt esse. Debitis nesciunt beatae accusantium quibusdam, qui, incidunt, suscipit libero laudantium quod expedita saepe fugiat quae quia similique rerum nam quos deserunt autem itaque!
-            </mat-card-content>
-        </mat-card>
+                <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>RUBRO</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                  
+                    <table class="example-full-width" cellspacing="0">
+                        <tr>
+                            <td><mat-form-field class="example-full-width">
+                                <mat-label>TELEFONO 1</mat-label>
+                                <input matInput>
+                            </mat-form-field></td>
+                            <td><mat-form-field class="example-full-width">
+                                <mat-label>TELEFONO 2</mat-label>
+                                <input matInput>
+                            </mat-form-field></td>
+                        </tr>
+                    </table>
+                  
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Pagina Web</mat-label>
+                        <input matInput>
+                    </mat-form-field>
 
+                    <mat-form-field class="example-full-width">
+                      <mat-label>email</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                 
+                    <table class="example-full-width" cellspacing="0"><tr>
+                      <td><mat-form-field class="example-full-width">
+                        <mat-label>Pais</mat-label>
+                        <input matInput placeholder="Ex. San Francisco">
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                        <mat-label>Ciudad</mat-label>
+                        <input matInput placeholder="Ex. California">
+                      </mat-form-field></td>
+                    </tr></table>
+                  </form>
+            </mat-card-content>
+            <mat-card-actions align="end">
+                <div class="example-button-row">
+                    <button mat-flat-button color="primary">Primary</button>
+                    <button mat-flat-button color="accent">Accent</button>
+                    <button mat-flat-button color="warn">Warn</button>
+                  </div>
+            </mat-card-actions>
+        </mat-card>
     </div>
+    <!-- column -->
 </div>
+
+<div>
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Configuracion Inicial</mat-card-title>
+            <mat-horizontal-stepper labelPosition="bottom" #stepper>
+                <mat-step [stepControl]="firstFormGroup">
+                  <form [formGroup]="firstFormGroup">
+                    <ng-template matStepLabel>Fill out your name</ng-template>
+                    <mat-form-field>
+                      <mat-label>Name</mat-label>
+                      <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                    </mat-form-field>
+                    <div>
+                      <button mat-button matStepperNext>Next</button>
+                    </div>
+                  </form>
+                </mat-step>
+                <mat-step [stepControl]="secondFormGroup" optional>
+                  <form [formGroup]="secondFormGroup">
+                    <ng-template matStepLabel>Fill out your address</ng-template>
+                    <mat-form-field>
+                      <mat-label>Address</mat-label>
+                      <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                             required>
+                    </mat-form-field>
+                    <div>
+                      <button mat-button matStepperPrevious>Back</button>
+                      <button mat-button matStepperNext>Next</button>
+                    </div>
+                  </form>
+                </mat-step>
+                <mat-step>
+                  <ng-template matStepLabel>Done</ng-template>
+                  <p>You are now done.</p>
+                  <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button (click)="stepper.reset()">Reset</button>
+                  </div>
+                </mat-step>
+              </mat-horizontal-stepper>
+        </mat-card-content>
+    </mat-card>
+
+</div>
+
+
+

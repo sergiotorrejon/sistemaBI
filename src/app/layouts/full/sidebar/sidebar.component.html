@@ -25,6 +25,14 @@
 <mat-nav-list appAccordion *ngFor="let menuitem of menuItems.getMenuitem()">
     <mat-list-item appAccordionLink routerLinkActive="selected">
 
+       <a class="" *ngIf="menuitem.type && menuitem.state" [routerLink]="['/', menuitem.state]" (click)="isExpanded = false" >
+            <mat-icon>{{ menuitem.icon }}</mat-icon> 
+            <p class="mat-body-2">{{ menuitem.name }}</p>
+            <mat-divider></mat-divider>
+        </a>
+    </mat-list-item>
+    <mat-list-item appAccordionLink routerLinkActive="selected">
+
         <a class="" *ngIf="menuitem.submenu && menuitem.submenu.length" (click)="isExpanded = !isExpanded" >
             <mat-icon>{{ menuitem.icon }}</mat-icon> 
             <p class="mat-body-2">{{ menuitem.name }}</p>
@@ -34,21 +42,42 @@
             </mat-icon>
             <mat-divider></mat-divider>
         </a>
+            <mat-list-item class="md-headline" appAccordion *ngFor="let sub of menuitem.submenu" [routerLink]="['/', sub.state]" routerLinkActive="selected" style="margin: 13px;">
+                <a class="" *ngIf="sub.type && sub.state">
+                    <mat-icon>{{ sub.icon }}</mat-icon> 
+                    <p class="mat-body-1">{{ sub.name }}</p>
+                </a>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+    </mat-list-item>
+
+    
+</mat-nav-list>
+
+<mat-nav-list  *ngFor="let menuitem of menuItems.getMenuitem()">
+    <mat-list-item  routerLinkActive="selected">
+
         <a class="" *ngIf="menuitem.type && menuitem.state" [routerLink]="['/', menuitem.state]" (click)="isExpanded = false" >
             <mat-icon>{{ menuitem.icon }}</mat-icon> 
             <p class="mat-body-2">{{ menuitem.name }}</p>
             <mat-divider></mat-divider>
         </a>
     </mat-list-item>
-    <div *ngIf="isExpanded">
+    <mat-expansion-panel >
+        <mat-expansion-panel-header *ngIf="menuitem.submenu && menuitem.submenu.length">
+          <a >
+              <p class="mat-body-2"><mat-icon >{{ menuitem.icon }}</mat-icon> {{ menuitem.name }}</p>
+          </a>
+        </mat-expansion-panel-header>
+    
         <mat-list-item class="md-headline" appAccordion *ngFor="let sub of menuitem.submenu" [routerLink]="['/', sub.state]" routerLinkActive="selected" style="margin: 13px;">
-            <a class="" *ngIf="sub.type && sub.state">
-                <mat-icon>{{ sub.icon }}</mat-icon> 
-                <p class="mat-body-1">{{ sub.name }}</p>
-                <i data-eva="github"></i>
-            </a>
-            <mat-divider></mat-divider>
-        </mat-list-item>
-    </div>
+          <a class="" *ngIf="sub.type && sub.state">
+              <mat-icon>{{ sub.icon }}</mat-icon> 
+              <p class="mat-body-1">{{ sub.name }}</p>
+          </a>
+  
+      </mat-list-item>
+    
+    </mat-expansion-panel>
     
 </mat-nav-list>
